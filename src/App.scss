@@ -1,0 +1,55 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+
+  .nav__item {
+    margin: 0 10px;
+  }
+}
+
+/* Home page */
+
+.home {
+  .home-navbar {
+    background-color: lightgreen;
+    position: sticky !important;
+    top: 0;
+    z-index: 2;
+    height: 50px;
+  }
+
+  .content-container {
+    display: flex;
+  }
+
+  .sidebar {
+    background-color: lightblue;
+    width: 200px;
+    position: sticky !important;
+    z-index: 1;
+    height: calc(100vh - 50px);
+    top: 50px;
+  }
+
+  .content {
+    background-color: lightyellow;
+    width: calc(100% - 200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  p {
+    color: grey;
+    max-width: 550px;
+  }
+}
+
+/* ---------- */
